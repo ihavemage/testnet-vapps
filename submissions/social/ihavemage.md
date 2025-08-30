@@ -36,12 +36,16 @@ zkProof ensures each member is legitimate, while votes remain private and secure
 AnonDAO Chat will directly integrate with **Soundness Layer** to handle identity verification, proof generation, and governance logic:
 **Wallet Authentication with SL SDK**
 Users log in using their wallet through the Soundness Layer SDK. This ensures only verified members can access the chat.
+
 **zkProof Verification**
 AnonDAO Chat leverages SL’s **zero-knowledge proof capabilities** to validate membership. A user can prove they belong to a DAO or community **without revealing their wallet address or sensitive information**.
+
 **On-chain Reputation / Membership State**
 SL is used to maintain and query on-chain data such as membership credentials, badges, or reputation scores. This prevents bots and duplicate accounts.
+
 **Governance Smart Contracts**
 Polls and votes inside the chat are executed as lightweight contracts on Soundness Layer. SL ensures that results are **transparent, immutable, and tamper-proof**.
+
 **In short**: Soundness Layer provides the **identity, zkProof privacy, and governance infrastructure** that powers AnonDAO Chat.
 
 ## Technical
