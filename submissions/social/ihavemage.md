@@ -53,15 +53,14 @@ Polls and votes inside the chat are executed as lightweight contracts on Soundne
 
 ### Architecture
 High-level system design and approach
-
- **Trust & Identity**: All membership/auth is handled by **Soundness Layer**. Users prove DAO membership with **zkProofs** so the app never sees raw wallet identities.
- **Messaging Path**: Messages are **end-to-end encrypted** on the client. A lightweight relay only routes encrypted blobs (no plaintext stored). Optional WALRUS/IPFS pinning for ephemeral history.
- **Governance Path**: Poll creation, vote casting, and tallying flow through **SL governance contracts**. Votes are anonymous but **uniqueness** is enforced by SL’s proof system (1 member = 1 vote or reputation-weighted).
- **State Split**:
+**Trust & Identity**: All membership/auth is handled by **Soundness Layer**. Users prove DAO membership with **zkProofs** so the app never sees raw wallet identities.
+**Messaging Path**: Messages are **end-to-end encrypted** on the client. A lightweight relay only routes encrypted blobs (no plaintext stored). Optional WALRUS/IPFS pinning for ephemeral history.
+**Governance Path**: Poll creation, vote casting, and tallying flow through **SL governance contracts**. Votes are anonymous but **uniqueness** is enforced by SL’s proof system (1 member = 1 vote or reputation-weighted).
+**State Split**:
    **On-chain (SL)**: membership credentials, poll/vote state, reputation weights.
    **Off-chain**: encrypted message blobs, channel metadata (non-sensitive), presence.
- **Privacy by Default**: Wallets stay private; moderators act on proof-backed roles instead of identities.
- **Scalability**: Chat scales horizontally at the relay; governance scales via contract design (batch tallies, event indexing).
+**Privacy by Default**: Wallets stay private; moderators act on proof-backed roles instead of identities.
+**Scalability**: Chat scales horizontally at the relay; governance scales via contract design (batch tallies, event indexing).
 
 Client (Wallet)
    ├─ SL SDK: login + zkProof (membership/reputation)
