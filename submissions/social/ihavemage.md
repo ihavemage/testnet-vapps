@@ -22,32 +22,32 @@ timestamp: "2025-08-30"
 ### Description
 **Problem**
 
-Current DAO and on-chain communities lack a unified platform that combines **real-time discussion** and **voting**.
+  Current DAO and on-chain communities lack a unified platform that combines **real-time discussion** and **voting**.
 Members usually chat on Discord/Telegram and vote separately on Snapshot or other tools, which creates fragmentation, inefficiency, and opens the door for **bot attacks or duplicate accounts**
 
 **What it does**
 
-AnonDAO Chat provides a **messaging platform integrated with anonymous voting**.
+  AnonDAO Chat provides a **messaging platform integrated with anonymous voting**.
 
-Members can join group chats, verified by Soundness Layer, without exposing their real identities.
+  Members can join group chats, verified by Soundness Layer, without exposing their real identities.
 They can participate in polls and DAO voting directly inside the chat.
 zkProof ensures each member is legitimate, while votes remain private and secure.
 
 ### SL Integration  
-AnonDAO Chat will directly integrate with **Soundness Layer** to handle identity verification, proof generation, and governance logic:
-**Wallet Authentication with SL SDK**
+  AnonDAO Chat will directly integrate with **Soundness Layer** to handle identity verification, proof generation, and governance logic:
+  **Wallet Authentication with SL SDK**
 Users log in using their wallet through the Soundness Layer SDK. This ensures only verified members can access the chat.
 
-**zkProof Verification**
+  **zkProof Verification**
 AnonDAO Chat leverages SL’s **zero-knowledge proof capabilities** to validate membership. A user can prove they belong to a DAO or community **without revealing their wallet address or sensitive information**.
 
-**On-chain Reputation / Membership State**
+  **On-chain Reputation / Membership State**
 SL is used to maintain and query on-chain data such as membership credentials, badges, or reputation scores. This prevents bots and duplicate accounts.
 
-**Governance Smart Contracts**
+  **Governance Smart Contracts**
 Polls and votes inside the chat are executed as lightweight contracts on Soundness Layer. SL ensures that results are **transparent, immutable, and tamper-proof**.
 
-**In short**: Soundness Layer provides the **identity, zkProof privacy, and governance infrastructure** that powers AnonDAO Chat.
+  **In short**: Soundness Layer provides the **identity, zkProof privacy, and governance infrastructure** that powers AnonDAO Chat.
 
 ## Technical
 
