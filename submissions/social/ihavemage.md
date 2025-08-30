@@ -68,20 +68,6 @@ High-level system design and approach
 
 **Scalability**: Chat scales horizontally at the relay; governance scales via contract design (batch tallies, event indexing).
 
-Client (Wallet)
-   ├─ SL SDK: login + zkProof (membership/reputation)
-   ├─ E2E encrypt messages
-   ├─ Create/Join Poll → zkVote
-   ↓
-Relay (stateless-ish)
-   ├─ route encrypted messages
-   └─ cache TTL-limited blobs
-   ↓
-Soundness Layer (on-chain)
-   ├─ Membership/reputation state
-   ├─ Governance contracts (polls/votes/tally)
-   └─ Proof verification (zk)
-
 ### Stack
 - **Frontend**: Next.js (React), wagmi/viem (or SL wallet hooks), Zustand for state, WebCrypto/Libsodium for E2E, shadcn/ui for components.
 - **Backend**: Node.js (NestJS/Fastify) or Rust (Axum) for the relay; Redis for presence/rate-limits.
