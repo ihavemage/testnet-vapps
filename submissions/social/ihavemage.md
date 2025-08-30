@@ -28,6 +28,7 @@ Members usually chat on Discord/Telegram and vote separately on Snapshot or othe
 **What it does**
 
 AnonDAO Chat provides a **messaging platform integrated with anonymous voting**.
+
 Members can join group chats, verified by Soundness Layer, without exposing their real identities.
 They can participate in polls and DAO voting directly inside the chat.
 zkProof ensures each member is legitimate, while votes remain private and secure.
