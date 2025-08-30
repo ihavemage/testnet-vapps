@@ -22,7 +22,7 @@ timestamp: "2025-08-30"
 ### Description
 **Problem**
 Current DAO and on-chain communities lack a unified platform that combines **real-time discussion** and **voting**.
-Members usually chat on Discord/Telegram and vote separately on Snapshot or other tools, which creates fragmentation, inefficiency, and opens the door for **bot attacks or duplicate accounts**.
+Members usually chat on Discord/Telegram and vote separately on Snapshot or other tools, which creates fragmentation, inefficiency, and opens the door for **bot attacks or duplicate accounts**
 
 What it does
 AnonDAO Chat provides a **messaging platform integrated with anonymous voting**.
