@@ -92,28 +92,41 @@ High-level system design and approach
 ## Timeline
 
 ### PoC (2-4 weeks)
+
 Implement **basic authentication** with Soundness Layer SDK.
+
 Enable **zkProof-based membership verification.**
+
 Build simple encrypted chat prototype (send/receive messages).
+
 Provide a **minimal UI** for login, chat, and basic poll creation.
 
 ### MVP (4-8 weeks)  
+
 Expand to **full feature set**: group chat, integrated polls, anonymous voting, role-gated channels.
+
 Optimize **SL integration** (zkProofs, governance contract, on-chain reputation).
+
 Design a **production-ready UI/UX** with smoother onboarding.
+
 Conduct **user testing** with small communities to validate usability and scalability.
 
 ## Innovation
 **What makes this unique?**
+
   **AnonDAO** Chat is not just another messaging app. Its uniqueness comes from **combining encrypted group chat with anonymous, zkProof-based governance.**
   Most platforms split communication (Discord/Telegram) and governance (Snapshot, Tally). AnonDAO Chat unifies them into **one seamless experience.**
   Instead of revealing wallet addresses or personal data, users prove their membership and reputation through **Soundness Layer zkProofs.**
   Voting happens directly inside the chat, with results written on-chain for **transparency and immutability** while maintaining user privacy.
 
 **Why will people use it?**
+
   **DAO efficiency** → Communities save time and avoid fragmentation by having discussion and decision-making in the same place.
+  
   **Privacy & trust** → Members don’t have to expose their wallets or identities, but can still be trusted participants.
+  
   **Anti-bot & Sybil resistance** → SL verification ensures that only legitimate members can chat and vote, reducing spam.
+  
   **Transparency** → Polls and results are verifiable on-chain, giving communities more confidence in governance outcomes.
 
 
